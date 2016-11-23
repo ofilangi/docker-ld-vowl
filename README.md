@@ -7,7 +7,7 @@ Visit the website [Visualizing Linked Data Endpoints] [ldvowl] for more informat
 by default ld-vowl is reachable at http://localhost:8080
 
 ```sh
-$ docker run -d -p 8080:8080 --name myname-ld_vowl -t ofilangi/docker-ld-vowl
+$ docker run -d -net="host" -p 8080:8080 --name myname-ld_vowl -t ofilangi/docker-ld-vowl
 $ <webbrowser> http://127.0.0.1:8080/#/graph?endpointURL=<endpoint url>
 ```
 for instance, I visualize my local virtuoso endpoint with the following command :

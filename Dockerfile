@@ -8,7 +8,10 @@ RUN apt-get update && apt-get install -y \
   build-essential \
   vim \
   npm \
-  nodejs-legacy
+  curl
+
+RUN curl -sL https://deb.nodesource.com/setup_7.x | bash -
+RUN apt-get install -y nodejs
 
 RUN git clone https://github.com/VisualDataWeb/LD-VOWL.git
 
