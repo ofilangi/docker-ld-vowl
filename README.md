@@ -8,7 +8,7 @@ by default ld-vowl is reachable at http://localhost:8080
 
 ```sh
 $ docker run -d -p 8080:8080 --name myname-ld_vowl -t ofilangi/docker-ld-vowl
-$ <webbrowser> http://localhost:8080:http://127.0.0.1:8080/#/graph?endpointURL=<endpoint url>
+$ <webbrowser> http://127.0.0.1:8080/#/graph?endpointURL=<endpoint url>
 ```
 for instance, I visualize my local virtuoso endpoint with the following command :
 
